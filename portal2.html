@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
+    <link rel="stylesheet" type="text/css" href="tasarım.css">
     <head>
+
     </head>
-    <body class="portal2">
-        <div class="ex1"> 
-            
-            <div class="ust_kisim">
-            <img class="resim2" src="./resimler/ana_sayfa_üst_kısım.png" alt="ana_sayfa_üst_kısım">      
-          </div>   
-            <div class="yonlendirme" >
-              <table cellspacing=10 cellpadding=5 class="yönlendirme_cubuk" >
-                <tr>
-                <td width="200px"height="10px"><a href="deneme.html" target="_self" class="Anasayfa1"><h2>Ana sayfa</h2></a></td>
-                <td width="200px"height="10px"><a href="hakkinda.html" target="_self" class="Anasayfa1"><h2>Hakkında</h2></a></td>
-                <td width="200px"height="10px"><a href="kurtlar_vadisi.html" target="_self" class="Anasayfa1"><h2>Kurtlar vadisi izle</h2></a></td>
-                <td width="200px"height="10px"><a href="deneme.html" target="_self" class="Anasayfa1"><h2>Tüm yazılar</h2></a></td>
-              </tr>
-            </table>
+    <body class="Anasayfa" >
+      
+        <div class="ex1" id="ex1"> 
+                
+            <div class="ust_kisim" id="üst_kisim">  <img class="resim2" src="./resimler/banner2.png" alt="ana_sayfa_üst_kısım"></div> 
+
+           <div>
+            <div class="yonlendirme" id="yonlendirme">
+              <a class="button_yazı_Anasayfa">Anasayfa</a>
+           <button class="button_1" id="button1" onclick="yönlendirme('./deneme.html')" ></button>
+           <a class="button_yazı_Tüm_Yazılar">Tüm yazılar</a>
+           <button class="button_1" id="button2"  onclick="yönlendirme('./tümyazılar.html')"></button>
+           <a class="button_yazı_Hakkında">Hakkında</a>
+           <button class="button_1" id="button3" onclick="yönlendirme('./hakkinda.html')"></button>
             </div>
-        </div>  
+           </div>
+           <div style="width: 100%;"> 
+            
+            <div style="width: 100%; float: left;"> 
+                <p class="Myazılar">Bir gün uyandığımız ve nerede olduğunuz ve olduğumuzu bilmediğimiz bir labratuvarda başlayan oyunda
+                  Glados adında çok üstün bir zekanın bize yaptığı testleri geçmeye çalışıyorduk.İlk oyunda yendiğimiz bu yapay zeka ile bizde bir takım zararlar görmüştük 
+                  ve ne olduğunu anlamamıştık.İkinci oyunda yine aynı şekilde deneklerin tutulduğu bir yerde uyanıyoruz tabii bizi buraya kimin getirdiği bilinmiyor,ve oradan 
+                  kaçmak için bize bir diğer yapay zeka olan wheatley yardım ediyor.
+          </p> 
+           <img src="./resimler/portal2menü.jpg" class="sayfaresim" style="width: 350px; float: left;">
+           <p style="margin-left: 15px; float:left; width: 450px;" class="Myazılar">Tam çıkışa ulaştık derken işler istediğimiz gibi gitmiyor ve Glados'u tekrar uyandırıyoruz.
+            Açıkçası portal hep ayrı listeye koyduğum bir oyun çünkü oynarken sizi içine soktuğu atmosfer olsun,diyaloglar olsun,Glados'un bizimle konuşmaları olsun hepsi
+            bizi yaptığımız davranışları sorgulamaya itiyor.</p>
+          
+          </div>
+        
+        </div>
+        
+    </div>
+       
     </body>
-    <link href="tasarım.css" type="text/css" rel="stylesheet"/>
 </html>
-<style src="tasarım.css">    
+<style src="tasarım.css"> 
 </style>
+<script src="./fonksiyonlar.js">
+    
+</script>

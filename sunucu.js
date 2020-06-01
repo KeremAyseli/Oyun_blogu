@@ -12,6 +12,6 @@ app.get('/hakkinda.html',function(req,res){
     res.append("deneme");
 })
 
-app.listen(8888,function(){
-   console.log("8888 üstünden dinleniyor");
-})
+app.listen( 8888,function(){
+  console.log("8888 üstünden dinleniyor");
+});

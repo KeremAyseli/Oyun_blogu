@@ -1,0 +1,15 @@
+{
+  "name": "sunucu.js",
+  "version": "0.0.1",
+  "author": "keremayseli",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "node sunucu.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+
+}

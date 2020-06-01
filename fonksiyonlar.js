@@ -33,9 +33,6 @@ var div_w=document.getElementById(arguments[0]).offsetWidth;
      console.log("div_height:"+div_h+" div_width:"+div_w);
    }
   }
- 
-
-
 }
 function uzaklık_hesaplama(){
   const elem2 = document.getElementById(arguments[0]);
@@ -54,19 +51,6 @@ function uzaklık_hesaplama(){
     return false;
   }
 }
-
-
-
-function rastgele_arkaplan(){
-  var resimler=['url(./resimler/arka_plan.png)','url(./resimler/arka_plan1.png)','url(./resimler/arka_plan2.png)'];
-
-  var rastgele_sayı = Math.floor(Math.random() *3);
-  document.getElementById("pencere").style.backgroundImage=resimler[rastgele_sayı];
-console.log(rastgele_sayı);
- 
-
-
-}
 var w2 = window.outerWidth;
   var h2 = window.outerHeight;
 function a(){
@@ -75,4 +59,16 @@ var w1 =document.getElementById("pencere").offsetWidth;
 console.log("h1 : "+h1+" w1 : "+w1);
 console.log("h "+h2+" w "+w2);
   
+}
+
+function rastgele_sayfa(){
+  var sayfalar=["./kısa_yazılar/portal2_kısayazı.html","./kısa_yazılar/csgo_kısayazı.html","./kısa_yazılar/lol_kısayazı.html"];
+  var rastgele_sayı = Math.floor(Math.random() *3);
+  document.getElementById("yazılar").src=sayfalar[rastgele_sayı];
+  console.log("yükelenen sayfa"+sayfalar[rastgele_sayı]);
+}
+
+
+function yönlendirme(adres){
+  window.location=adres;
 }
